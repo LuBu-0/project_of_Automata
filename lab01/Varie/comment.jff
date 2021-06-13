@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>
+	<type>fa</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>210.0</x>
+			<y>317.0</y>
+			<initial/>
+		</state>
+		<state id="1" name="q1">
+			<x>410.0</x>
+			<y>87.0</y>
+		</state>
+		<state id="2" name="q2">
+			<x>974.0</x>
+			<y>87.0</y>
+			<label>self loop per qualunque carattere tranne \n</label>
+		</state>
+		<state id="3" name="q3">
+			<x>1187.0</x>
+			<y>317.0</y>
+			<final/>
+		</state>
+		<state id="4" name="q4">
+			<x>700.0</x>
+			<y>318.0</y>
+			<label>self loop per qualunque carattere tranne }</label>
+		</state>
+		<state id="5" name="q">
+			<x>145.0</x>
+			<y>56.0</y>
+			<label>Il . rappresenta un qualsiasi carattere</label>
+		</state>
+		<state id="7" name="q5">
+			<x>386.0</x>
+			<y>507.0</y>
+		</state>
+		<state id="8" name="q6">
+			<x>703.0</x>
+			<y>507.0</y>
+			<label>self loop per qualunque carattere tranne *</label>
+		</state>
+		<state id="9" name="q7">
+			<x>1027.0</x>
+			<y>504.0</y>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>/</read>
+		</transition>
+		<transition>
+			<from>9</from>
+			<to>8</to>
+			<read>.</read>
+		</transition>
+		<transition>
+			<from>8</from>
+			<to>9</to>
+			<read>*</read>
+		</transition>
+		<transition>
+			<from>9</from>
+			<to>9</to>
+			<read>*</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>3</to>
+			<read>}</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>4</to>
+			<read>.</read>
+		</transition>
+		<transition>
+			<from>8</from>
+			<to>8</to>
+			<read>.</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read>.</read>
+		</transition>
+		<transition>
+			<from>9</from>
+			<to>3</to>
+			<read>)</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>7</to>
+			<read>(</read>
+		</transition>
+		<transition>
+			<from>7</from>
+			<to>8</to>
+			<read>*</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>3</to>
+			<read>\n</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>4</to>
+			<read>{</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>/</read>
+		</transition>
+	</automaton>
+</structure>
